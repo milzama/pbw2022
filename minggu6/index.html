@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Layout dengan Elemen Semantik</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/image/gambar1.webp" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>WELCOME</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="home" class="profile card">
+          <h2>Home</h2>
+          <header>
+            <figure>
+              <img src="assets/image/foto.JPG" alt="" />
+            </figure>
+            <h3 align="center">Hi, saya adalah pemain basket. Saat ini saya sedang mengajar di club basket bernama Kumala Jaya</h3>
+          </header>
+
+          <section>
+            <div style="max-width: 600px; margin: 3em auto">
+              <table border="1" width="100%">
+                <thead>
+                  <tr>
+                    <th>Skill</th>
+                    <th>Pengalaman</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>Menguasai berbagai jenis strategi menyerang</li>
+                        <li>Nice dribbling and passing</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Timnas Basket Indonesia U18</li>
+                        <li>Ikut kejuaraan jurnas</li>
+                        <li>Pernah mengikuti jrnba di Amerika</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </article>
+
+        <article id="contactme" class="card">
+          <div>
+            <h2>Contact Me</h2>
+            <form>
+              <li><i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp : 0895422590909</li>
+              <li>Email: milzamzp@gmail.com</li>
+              <li><a href="https://www.instagram.com/milzama_//">Instagram</a></li>
+
+              <label for="email">Email</label><br />
+              <input type="email" name="email" placeholder="alamat email" required />
+              <br />
+              <label for="message">Pesan</label><br />
+              <textarea name="message" placeholder="Tulis pesan anda..." rows="10" cols="100" required></textarea>
+              <br />
+              <br />
+              <input type="submit" value="Kirim" />
+            </form>
+          </div>
+        </article>
+
+        <article id="aboutme" class="card">
+          <h2>About Me</h2>
+          <p>Hi, saya adalah pemain basket.</p>
+          <p>Walaupun saya masih berusia 18 tahun tetapi pengalaman saya untuk menjadi coach sudah layak.</p>
+          <p>Selain itu saya juga mempunyai hobi naik gunung. Ini adalah teaser video saya naik gunung sumbing</p>
+          <p>
+            <video width="=320" height="240" controls>
+              <source src="assets/video/vid1.MP4" type="video/mp4"/>
+            </video>
+          </p>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Profile Saya</h2>
+            <figure>
+              <img src="assets/image/foto.JPG" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>Milzama Zharfano</td>
+              </tr>
+              <tr>
+                <th>Tanggal Lahir</th>
+                <td>01 November 2004</td>
+              </tr>
+              <tr>
+                <th>Alamat</th>
+                <td>Semarang, Jawa Tengah</td>
+              </tr>
+              <tr>
+                <th>Hobi</th>
+                <td>Basket</td>
+              </tr>
+              <tr>
+                <th>Jabatan</th>
+                <td>Mahasiswa</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>milzamzp@gmail.com</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &copy; 2022, Milzama Zharfano</p>
+    </footer>
+  </body>
+</html>
